@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon cat.png" type="image/x-icon">
+    <title>Comment Section | Trivago</title>
+</head>
+<body id="docBody">
+
+    <div id="allContainer">
+
+        <div class="com-wrapper main-coms" id="amyrobWrapper">
+            <div class="vote-wrapper">
+                <div class="plus-icon">+</div>
+                <div class="vote-number pix18 bold">12</div>
+                <div class="minus-icon">-</div>
+            </div> <!-- vote wrapper -->
+
+        <div class="com-column">
+            <div class="top-flx">
+                <img src="image-amyrobson.png" class="top-avatar" />
+                <div class="top-username pix18 bold">amyrobson</div>
+                <div class="top-date pix18">1 month ago</div>
+                <div class="reply-txt pix18 bold main-reps"><span class="reply-icon"><img src="icon-reply.svg" /></span> Reply</div>
+            </div>
+
+            <div class="com-para-border">
+                <div class="com-para-txt">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</div>
+            </div>
+        </div> <!-- com column -->
+        </div> <!-- comment wrapper -->
+
+        <div class="drop-container" id="newDropContain" style="display: none;">
+            <div class="drop-border"></div>
+
+            <div class="drop-coms-col" id="dropColParent">
+
+            </div>
+        </div>
+
+
+        <div class="com-wrapper main-coms" id="maxblaWrapper">
+            <div class="vote-wrapper">
+                <div class="plus-icon">+</div>
+                <div class="vote-number pix18 bold">5</div>
+                <div class="minus-icon">-</div>
+            </div> <!-- vote wrapper -->
+
+        <div class="com-column">
+            <div class="top-flx">
+                <img src="image-maxblagun.png" class="top-avatar" />
+                <div class="top-username pix18 bold">maxblagun</div>
+                <div class="top-date pix18">2 weeks ago</div>
+                <div class="reply-txt pix18 bold" onclick="maxReply()"><span class="reply-icon"><img src="icon-reply.svg" /></span> Reply</div>
+            </div>
+
+            <div class="com-para-border">
+                <div class="com-para-txt">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</div>
+            </div>
+        </div> <!-- com column -->
+        </div> <!-- comment wrapper -->
+
+        <div class="drop-container" id="dropContainer">
+            <div class="drop-border"></div>
+
+        <div class="drop-coms-col" id="dropComCont">
+
+            <div class="com-wrapper" id="ramsesmiron">
+                <div class="vote-wrapper">
+                    <div class="plus-icon">+</div>
+                    <div class="vote-number pix18 bold">4</div>
+                    <div class="minus-icon">-</div>
+                </div> <!-- vote wrapper -->
+    
+            <div class="com-column">
+                <div class="top-flx">
+                    <img src="image-ramsesmiron.png" class="top-avatar" />
+                    <div class="top-username pix18 bold">ramsesmiron</div>
+                    <div class="top-date pix18">1 week ago</div>
+                    <div class="reply-txt pix18 bold" onclick="ramReply()"><span class="reply-icon"><img src="icon-reply.svg" /></span> Reply</div>
+                </div>
+    
+                <div class="com-para-border">
+                    <div class="com-para-txt"><span class="tag-txt">@maxblagun</span> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</div>
+                </div>
+            </div> <!-- com column -->
+            </div> <!-- comment wrapper -->
+
+        </div> 
+        </div>  
+
+        <div class="add-wrapper" id="addWrapper" style="margin-bottom: 30px;">
+            <img src="image-juliusomo.png" class="add-avatar" />
+            <textarea id="addTextarea" cols="10" rows="5" class="add-textarea" placeholder="Add a comment..."></textarea>
+            <button class="send-btn pix18 bold" onclick="sendNewComment()">SEND</button>
+        </div>
+
+    </div> <!-- all container -->
+
+    <script src="script.js"></script>
+</body>
+</html>
